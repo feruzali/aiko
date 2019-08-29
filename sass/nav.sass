@@ -1,0 +1,68 @@
+nav
+	margin-top: 21px
+	min-height: 50px
+	background-color: $white
+#open
+	display: none
+
+.nav-menu
+	display: none
+	position: fixed
+	width: 100%
+	height: 100vh
+	top: 0
+	left: 0
+	background-color: $dark-grey
+	z-index: 2
+	overflow: hidden
+	opacity: .9
+	span
+		position: fixed
+		top: 8px
+		right: 40px
+		font-size: 40px
+		color: $white
+		transition: all .5s
+		&:hover
+			cursor: pointer
+			color: $pale-blue
+			border-color: $pale-blue
+.nav-bar
+	&-list
+		margin-top: 5px
+		margin-left: 40px
+		display: flex
+		justify-content: space-around
+		&__elem
+			color: $pale-blue
+			font-family: 'Montserrat', sans-serif
+			font-size: 15px
+			font-weight: 600
+			line-height: 20px
+
+.auth
+	margin-top: 2px
+	margin-left: 61px
+	&__login,&__reg
+		color: $black
+		font-family: Montserrat
+		font-size: 12px
+		font-weight: 600
+		background-color: transparent
+		border: none
+	&__login
+		padding: 6px 35px 6px 54px
+		border-radius: 20px
+		border: 2px solid $grey-txt
+		margin-right: 30px
+		&_user
+			position: absolute
+			left: 76px
+			top: 4px
+			width: 30px
+			height: 30px
+			font-size: 18px
+			color: $white
+			background-color: $grey-txt
+			line-height: 30px
+			border-radius: 50%	
